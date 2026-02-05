@@ -3,6 +3,17 @@
   color: black;
 }
 
+
+::-webkit-scrollbar {
+    background-color: #ff0000;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #7f0000;
+    border-radius: 100px;
+    webkit-border-start-width: px;
+}
+
 body {
   margin: 0px;
   font-family: 'Goldman', sans-serif;
@@ -21,6 +32,10 @@ body {
   justify-content: center;
 }
 
+.logoG:hover {
+    scale: 0.9;
+}
+
 .logo {
   width: 350px;
   margin: 30px;
@@ -32,7 +47,6 @@ body {
   scale: 1;
   filter: drop-shadow(0 0 10px red);
 }
-
 #title {
   color: red;
   font-family: 'Goldman', sans-serif;
@@ -80,4 +94,86 @@ body {
   filter: drop-shadow(0 0 10px red);
   border: 2px solid black;
   scale: 1.2;
+}
+
+.navbar-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar {
+    height: 96px;
+    background: #000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-right: 50px;
+    transition: height 0.25s ease;
+}
+
+/* LOGO */
+.nav-left img {
+    height: 101px;
+    transition: height 0.25s ease;
+}
+
+/* MENU */
+.nav-right {
+    display: flex;
+    gap: 42px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-family: 'Goldman', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    filter: drop-shadow(0 0 10px red);
+    font-size: 19px;
+    color: #ff0000;
+    transition: color 0.2s ease;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+    filter: drop-shadow(0 0 8px red);
+    scale: 1.1;
+}
+
+.nav-link.active {
+    color: darkred;
+    filter: drop-shadow(0 0 10px darkred);
+}
+
+/* ALT ŞERİT */
+.nav-accent {
+    height: 8px;
+    background: #ff0000;
+    transition: height 0.25s ease;
+    filter: drop-shadow(0 0 10px red);
+}
+
+/* SCROLL'DA KÜÇÜLME */
+.navbar.shrink {
+    height: 64px;
+}
+
+.navbar.shrink .nav-left img {
+    height: 70px;
+}
+
+.navbar.shrink + .nav-accent {
+    height: 5px;
+}
+
+/* CONTENT */
+.content {
+    margin-top: 140px;
+    min-height: 200vh;
 }
