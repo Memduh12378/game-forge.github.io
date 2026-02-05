@@ -63,7 +63,7 @@ body {
 
 
 #view {
-  position: fixed;
+  margin: 20px;
   padding: 16px 28px;
   border-radius: 6px;
   font-weight: 600;
@@ -83,10 +83,4 @@ body {
   filter: drop-shadow(0 0 10px red);
   border: 2px solid black;
   scale: 1.2;
-}
-
-#view:focus {
-  background: red;
-  color: black;
-  border: 2px solid red;
 }
