@@ -10,7 +10,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   color: red;
-  background-color: darkgrey;
+  background-color: black;
 }
 
 .container {
@@ -31,7 +31,7 @@ body {
   scale: 1.2
 }
 
-.logoG {
+.logoG:hover {
   scale: 1;
   filter: drop-shadow(0 0 8px black);
 }
@@ -39,7 +39,7 @@ body {
 #title {
   color: red;
   font-family: 'Goldman', sans-serif;
-  filter: drop-shadow(0 0 10px red);
+  filter: drop-shadow(0 0 8px red);
   font-weight: 900;
   font-size: 30px;
   margin: -5px;
@@ -48,7 +48,7 @@ body {
 #des1 {
   color: red;
   font-family: 'Goldman', sans-serif;
-  filter: drop-shadow(0 0 10px red);
+  filter: drop-shadow(0 0 5px red);
   font-weight: 700;
   font-size: 20px;
 }
